@@ -591,7 +591,7 @@ pip install xarray rioxarray`}
                 Complete Python programming course for geospatial analysis
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=_5QjJGWDW4g" 
+                href="https://www.youtube.com/watch?v=0mWgVVH_dos" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
@@ -609,7 +609,7 @@ pip install xarray rioxarray`}
                 Fundamentals of remote sensing and satellite image interpretation
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=F2l7sNRFQMY" 
+                href="https://www.youtube.com/watch?v=OexVVI9UQ3w" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
@@ -627,7 +627,7 @@ pip install xarray rioxarray`}
                 Tips and strategies for succeeding in hackathons and competitions
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=8lxGkZ3xGZE" 
+                href="https://www.youtube.com/watch?v=9l7L82HqQks&t=60s" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
