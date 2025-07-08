@@ -176,7 +176,7 @@ const Home = () => {
                   A comprehensive overview of satellite remote sensing, its applications, and how to get started with geospatial data analysis
                 </p>
                 <a 
-                  href="https://www.youtube.com/watch?v=tKW-GlaEC9o" 
+                  href="https://www.youtube.com/watch?v=QhEQP8_gkbY" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-lg font-medium"

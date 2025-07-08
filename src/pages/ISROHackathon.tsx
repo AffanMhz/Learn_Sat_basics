@@ -582,7 +582,7 @@ const ISROHackathon = () => {
                 Learn about ISRO's incredible space missions and technological achievements
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=2MKtLhzzaWo" 
+                href="https://www.youtube.com/watch?v=HRTIz8HvmGE" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
@@ -600,7 +600,7 @@ const ISROHackathon = () => {
                 Inspiring stories and solutions from previous ISRO hackathon winners
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=IjXUQ8Dj5u4" 
+                href="https://www.youtube.com/watch?v=7PK8_5WzUDY" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"

@@ -7,6 +7,9 @@ import MachineLearning from './pages/MachineLearning';
 import QGIS from './pages/QGIS';
 import ISROHackathon from './pages/ISROHackathon';
 import Preparation from './pages/Preparation';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import Contact from './pages/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -23,6 +26,9 @@ function App() {
             <Route path="/qgis" element={<QGIS />} />
             <Route path="/isro-hackathon" element={<ISROHackathon />} />
             <Route path="/preparation" element={<Preparation />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />

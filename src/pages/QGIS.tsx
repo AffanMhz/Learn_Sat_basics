@@ -510,7 +510,7 @@ const QGIS = () => {
                 Complete guide to getting started with QGIS for beginners
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=kCnNWyl9qSE" 
+                href="https://www.youtube.com/watch?v=xGgfQ_Mg-vM" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
@@ -528,7 +528,7 @@ const QGIS = () => {
                 Working with satellite imagery and remote sensing data in QGIS
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=u9uMf9lQJSo" 
+                href="https://www.youtube.com/watch?v=D_jmYzKF7wU" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"

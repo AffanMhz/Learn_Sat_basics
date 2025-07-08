@@ -1,3 +1,5 @@
+import CodeBlock from '../components/CodeBlock';
+
 const MachineLearning = () => {
   return (
     <div className="min-h-screen py-12">
@@ -239,9 +241,9 @@ const MachineLearning = () => {
         {/* Code Example */}
         <div className="section-card">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Python Example: Land Cover Classification</h2>
-          <div className="bg-gray-900 rounded-lg p-6 overflow-x-auto">
-            <pre className="text-green-400 text-sm">
-{`import numpy as np
+          <CodeBlock
+            title="Land Cover Classification with Random Forest"
+            code={`import numpy as np
 import rasterio
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
@@ -392,8 +394,7 @@ if __name__ == "__main__":
         image_path='new_image.tif',
         output_path='classified_output.tif'
     )`}
-            </pre>
-          </div>
+          />
         </div>
 
         {/* Deep Learning Section */}
@@ -510,7 +511,7 @@ if __name__ == "__main__":
                 Comprehensive tutorial on applying ML techniques to satellite imagery analysis
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=vdLPs0_ag0E" 
+                href="https://www.youtube.com/watch?v=YfNqAaJmTS4" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
@@ -528,7 +529,7 @@ if __name__ == "__main__":
                 Advanced techniques using neural networks for satellite data processing
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=WjGpJhVY2ks" 
+                href="https://www.youtube.com/watch?v=1-t6fH4KFvk" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"

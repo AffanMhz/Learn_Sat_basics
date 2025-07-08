@@ -1,3 +1,5 @@
+import CodeBlock from '../components/CodeBlock';
+
 const Rasterization = () => {
   return (
     <div className="min-h-screen py-12">
@@ -54,7 +56,7 @@ const Rasterization = () => {
                 </h4>
                 <p className="text-red-700 text-sm mb-3">Learn rasterization concepts with practical examples</p>
                 <a 
-                  href="https://www.youtube.com/watch?v=kIID5FDi2JQ" 
+                  href="https://www.youtube.com/watch?v=IiHqFJvhVE8" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm"
@@ -217,9 +219,9 @@ const Rasterization = () => {
         {/* Code Example */}
         <div className="section-card">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Python Example</h2>
-          <div className="bg-gray-900 rounded-lg p-6 overflow-x-auto">
-            <pre className="text-green-400 text-sm">
-{`import rasterio
+          <CodeBlock 
+            title="Vector to Raster Conversion with Python"
+            code={`import rasterio
 from rasterio import features
 import geopandas as gpd
 import numpy as np
@@ -254,8 +256,7 @@ with rasterio.open('output.tif', 'w',
                    crs=vector_data.crs,
                    transform=transform) as dst:
     dst.write(raster, 1)`}
-            </pre>
-          </div>
+          />
         </div>
 
         {/* Best Practices */}
