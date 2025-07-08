@@ -173,4 +173,4 @@ Students can now access your platform at `https://YOUR_USERNAME.github.io/YOUR_R
 - ISRO hackathon preparation
 - Comprehensive preparation resources
 
-Happy teaching! 🎓
+Happy Learning! 🎓
