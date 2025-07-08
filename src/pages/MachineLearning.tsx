@@ -38,7 +38,20 @@ const MachineLearning = () => {
                   <li>• Real-time analysis and monitoring</li>
                 </ul>
               </div>
+        
+              {/* 🔗 Read further link */}
+              <div className="mt-4">
+                <a 
+                  href="https://mygeoblog.com/2019/10/18/using-artificial-intelligence-for-satellite-image-classification/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-blue-600 hover:text-blue-800 underline font-medium"
+                >
+                  Read further →
+                </a>
+              </div>
             </div>
+        
             <div className="rounded-lg overflow-hidden shadow-md">
               <img 
                 src="https://mygeoblog.com/wp-content/uploads/2019/10/aiworkflow1.png" 
