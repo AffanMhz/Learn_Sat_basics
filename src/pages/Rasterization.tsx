@@ -57,7 +57,7 @@ const Rasterization = () => {
                 <p className="text-red-700 text-sm mb-3">Learn rasterization concepts with practical examples</p>
                 <a 
                   href="https://www.youtube.com/watch?v=HifzsycRU6c"
-                  
+                  // https://www.youtube.com/watch?v=7F4n87j7XA0
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm"
