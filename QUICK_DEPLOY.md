@@ -1,6 +1,6 @@
 # 🚀 Quick GitHub Deployment Commands
 
-Follow these exact commands to deploy your satellite data analysis platform to GitHub Pages:
+These are the commands to deploy your satellite data analysis platform to GitHub Pages:
 
 ## 1️⃣ First, update your Vite configuration
 
@@ -87,4 +87,4 @@ Each page includes:
 - ✅ Step-by-step guides
 - ✅ Practical examples and exercises
 
-## 🎓 Your platform is ready to help students worldwide learn satellite data analysis!
+## 🎓 My platform is ready to help students worldwide learn satellite data analysis!
