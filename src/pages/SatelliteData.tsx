@@ -55,7 +55,8 @@ const SatelliteData = () => {
                 </h4>
                 <p className="text-blue-700 text-sm mb-3">Understanding satellite technology and data collection</p>
                 <a 
-                  href="https://www.youtube.com/watch?v=YfNqAaJmTS4" 
+                  href="https://www.youtube.com/watch?v=VM5nOaLU7XM&t=1s" 
+                  
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
