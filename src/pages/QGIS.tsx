@@ -37,8 +37,20 @@ const QGIS = () => {
                   <li>• Active community support</li>
                   <li>• Regular updates and improvements</li>
                 </ul>
+                {/* 📄 Read PDF link */}
+                <div className="mt-4">
+                  <a
+                    href="https://data.inpe.br/bdc/web/wp-content/uploads/2025/05/WTSS-QGIS-uma-extensao-para-recuperacao-e-visualizacao-de-series-temporais-de-imagens-de-satelite-no-ambiente-QGIS.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-700 hover:text-green-900 underline text-sm font-medium"
+                  >
+                    📄 Read full WTSS-QGIS PDF →
+                  </a>
+                </div>
               </div>
             </div>
+            
             <div className="rounded-lg overflow-hidden shadow-md">
               <img 
                 src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-25882-z/MediaObjects/41467_2021_25882_Fig2_HTML.png" 
@@ -51,6 +63,7 @@ const QGIS = () => {
             </div>
           </div>
         </div>
+
 
         {/* Getting Started */}
         <div className="section-card">
