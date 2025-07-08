@@ -1,5 +1,7 @@
 # Satellite Data Guide
 
+### Don't wanna read all that? 
+- **Link** - https://affanmhz.github.io/Learn_Sat_basics/
 A comprehensive educational web application for learning satellite data processing, rasterization techniques, and geospatial analysis. Built with React, TypeScript, Tailwind CSS, and Vite.
 
 ## 🛰️ About
