@@ -73,9 +73,9 @@ const Footer = () => {
               © 2025 Satellite Data Guide. All rights reserved. Educational content for learning purposes.
             </p>
             <div className="mt-4 md:mt-0 flex space-x-6">
-              <a href="https://github.com/AffanMhz/Learn_Sat_basics/blob/main/README.md" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-              <a href="https://github.com/AffanMhz/Learn_Sat_basics/blob/main/README.md" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
-              <a href="https://github.com/AffanMhz/Learn_Sat_basics/issues" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-sm transition-colors">Contact</a>
+              <Link to="/privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</Link>
+              <Link to="/contact" className="text-gray-400 hover:text-white text-sm transition-colors">Contact</Link>
             </div>
           </div>
         </div>
