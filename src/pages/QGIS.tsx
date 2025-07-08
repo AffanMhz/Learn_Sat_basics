@@ -41,7 +41,7 @@ const QGIS = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-25882-z/MediaObjects/41467_2021_25882_Fig2_HTML.png" 
                 alt="QGIS Geographic Information System Interface" 
                 className="w-full h-64 object-cover"
               />
@@ -510,7 +510,7 @@ const QGIS = () => {
                 Complete guide to getting started with QGIS for beginners
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=xGgfQ_Mg-vM" 
+                href="https://www.youtube.com/watch?v=NnPAJG39HFg" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
@@ -528,7 +528,7 @@ const QGIS = () => {
                 Working with satellite imagery and remote sensing data in QGIS
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=D_jmYzKF7wU" 
+                href="https://www.youtube.com/watch?v=kxXww-iefFs" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
