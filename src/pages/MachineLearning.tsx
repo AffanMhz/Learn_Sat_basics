@@ -41,7 +41,7 @@ const MachineLearning = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1527474305487-b87b222841cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                src="https://mygeoblog.com/wp-content/uploads/2019/10/aiworkflow1.png" 
                 alt="AI and Machine Learning in Earth Observation" 
                 className="w-full h-64 object-cover"
               />
@@ -511,7 +511,7 @@ if __name__ == "__main__":
                 Comprehensive tutorial on applying ML techniques to satellite imagery analysis
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=YfNqAaJmTS4" 
+                href="https://www.youtube.com/watch?v=U-uJGnhD-zg" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
@@ -529,7 +529,7 @@ if __name__ == "__main__":
                 Advanced techniques using neural networks for satellite data processing
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=1-t6fH4KFvk" 
+                href="https://www.youtube.com/watch?v=o-hD_yH_j-s" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
