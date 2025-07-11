@@ -1,4 +1,5 @@
 import CodeBlock from '../components/CodeBlock';
+import { Link } from 'react-router-dom';
 
 const Rasterization = () => {
   return (
@@ -31,20 +32,23 @@ const Rasterization = () => {
                 and contains attribute information.
               </p>
             </div>
+            
             <div className="space-y-6">
-              <div className="relative rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=600&h=400&fit=crop" 
-                  alt="Vector to Raster Conversion Process"
-                  className="w-full h-64 object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
-                  <div>
-                    <p className="text-white font-semibold text-lg">Vector to Raster Conversion</p>
-                    <p className="text-gray-200 text-sm">Geographic data transformation process</p>
-                  </div>
-                </div>
+            <div className="relative rounded-lg overflow-hidden shadow-lg aspect-w-3 aspect-h-2">
+            <img 
+              src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=600&h=400&fit=crop" 
+              alt="Vector to Raster Conversion Process"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-4">
+              <div>
+                <p className="text-white font-semibold text-lg">Vector to Raster Conversion</p>
+                <p className="text-gray-200 text-sm">Geographic data transformation process</p>
               </div>
+            </div>
+          </div>
+
+
               
               {/* YouTube Tutorial */}
               <div className="bg-red-50 border border-red-200 rounded-lg p-4">
@@ -56,7 +60,8 @@ const Rasterization = () => {
                 </h4>
                 <p className="text-red-700 text-sm mb-3">Learn rasterization concepts with practical examples</p>
                 <a 
-                  href="https://www.youtube.com/watch?v=IiHqFJvhVE8" 
+                  href="https://www.youtube.com/watch?v=HifzsycRU6c"
+                  // https://www.youtube.com/watch?v=7F4n87j7XA0
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm"
@@ -311,12 +316,12 @@ with rasterio.open('output.tif', 'w',
         {/* Navigation */}
         <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
           <div></div>
-          <a
-            href="/satellite-data"
+          <Link
+            to="/satellite-data"
             className="btn-primary"
           >
             Next: Satellite Data →
-          </a>
+          </Link>
         </div>
       </div>
     </div>

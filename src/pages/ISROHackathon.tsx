@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const ISROHackathon = () => {
   return (
     <div className="min-h-screen py-12">
@@ -42,7 +44,7 @@ const ISROHackathon = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                src="https://geospatialmedia.s3.amazonaws.com/wp-content/uploads/2018/02/isro-1024x575.jpg" 
                 alt="ISRO Space Innovation Challenge" 
                 className="w-full h-64 object-cover"
               />
@@ -582,7 +584,7 @@ const ISROHackathon = () => {
                 Learn about ISRO's incredible space missions and technological achievements
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=HRTIz8HvmGE" 
+                href="https://www.youtube.com/watch?v=RgLwBq0Y1mE" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
@@ -600,7 +602,7 @@ const ISROHackathon = () => {
                 Inspiring stories and solutions from previous ISRO hackathon winners
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=7PK8_5WzUDY" 
+                href="https://www.youtube.com/watch?v=Wh3yYHs8i-g" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
@@ -614,18 +616,18 @@ const ISROHackathon = () => {
 
         {/* Navigation */}
         <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
-          <a
-            href="/qgis"
+          <Link
+            to="/qgis"
             className="btn-secondary"
           >
             ← Previous: QGIS
-          </a>
-          <a
-            href="/preparation"
+          </Link>
+          <Link
+            to="/preparation"
             className="btn-primary"
           >
             Next: Preparation →
-          </a>
+          </Link>
         </div>
       </div>
     </div>

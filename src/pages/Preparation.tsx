@@ -1,4 +1,5 @@
 import CodeBlock from '../components/CodeBlock';
+import { Link } from 'react-router-dom';
 
 const Preparation = () => {
   return (
@@ -563,18 +564,18 @@ pip install xarray rioxarray`}
               Start with the fundamentals and progress through each stage systematically.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/rasterization"
+              <Link
+                to="/rasterization"
                 className="btn-primary"
               >
                 Begin Learning Journey
-              </a>
-              <a
-                href="/isro-hackathon"
+              </Link>
+              <Link
+                to="/isro-hackathon"
                 className="btn-secondary"
               >
                 View Hackathon Guide
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -591,7 +592,7 @@ pip install xarray rioxarray`}
                 Complete Python programming course for geospatial analysis
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=_5QjJGWDW4g" 
+                href="https://www.youtube.com/watch?v=0mWgVVH_dos" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
@@ -609,7 +610,7 @@ pip install xarray rioxarray`}
                 Fundamentals of remote sensing and satellite image interpretation
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=F2l7sNRFQMY" 
+                href="https://www.youtube.com/watch?v=OexVVI9UQ3w" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
@@ -627,7 +628,7 @@ pip install xarray rioxarray`}
                 Tips and strategies for succeeding in hackathons and competitions
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=8lxGkZ3xGZE" 
+                href="https://www.youtube.com/watch?v=9l7L82HqQks&t=60s" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
@@ -641,18 +642,18 @@ pip install xarray rioxarray`}
 
         {/* Navigation */}
         <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
-          <a
-            href="/isro-hackathon"
+          <Link
+            to="/isro-hackathon"
             className="btn-secondary"
           >
             ← Previous: ISRO Hackathon
-          </a>
-          <a
-            href="/"
+          </Link>
+          <Link
+            to="/"
             className="btn-primary"
           >
             Back to Home
-          </a>
+          </Link>
         </div>
       </div>
     </div>

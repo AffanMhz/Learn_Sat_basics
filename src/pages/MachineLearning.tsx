@@ -1,4 +1,5 @@
 import CodeBlock from '../components/CodeBlock';
+import { Link } from 'react-router-dom';
 
 const MachineLearning = () => {
   return (
@@ -14,6 +15,7 @@ const MachineLearning = () => {
             satellite data analysis and Earth observation applications.
           </p>
         </div>
+
 
         {/* Introduction */}
         <div className="section-card">
@@ -38,19 +40,32 @@ const MachineLearning = () => {
                   <li>• Real-time analysis and monitoring</li>
                 </ul>
               </div>
-            </div>
-            <div className="rounded-lg overflow-hidden shadow-md">
-              <img 
-                src="https://images.unsplash.com/photo-1527474305487-b87b222841cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="AI and Machine Learning in Earth Observation" 
-                className="w-full h-64 object-cover"
-              />
-              <div className="bg-gray-50 p-3 text-center">
-                <p className="text-sm font-medium text-gray-700">AI-Powered Earth Observation</p>
+        
+              {/* 🔗 Read further link */}
+              <div className="mt-4">
+                <a 
+                  href="https://mygeoblog.com/2019/10/18/using-artificial-intelligence-for-satellite-image-classification/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-blue-600 hover:text-blue-800 underline font-medium"
+                >
+                  Read further →
+                </a>
               </div>
             </div>
+        
+            <div className="rounded-lg overflow-hidden shadow-md">
+            <img 
+              src="https://mygeoblog.com/wp-content/uploads/2019/10/aiworkflow1.png" 
+              alt="AI and Machine Learning in Earth Observation" 
+              className="w-full object-contain"
+            />
+            <div className="bg-gray-50 p-3 text-center">
+              <p className="text-sm font-medium text-gray-700">AI-Powered Earth Observation</p>
+            </div>
           </div>
-        </div>
+          </div>
+          </div>
 
         {/* ML Techniques */}
         <div className="section-card">
@@ -511,7 +526,7 @@ if __name__ == "__main__":
                 Comprehensive tutorial on applying ML techniques to satellite imagery analysis
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=YfNqAaJmTS4" 
+                href="https://www.youtube.com/watch?v=U-uJGnhD-zg" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
@@ -529,7 +544,7 @@ if __name__ == "__main__":
                 Advanced techniques using neural networks for satellite data processing
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=1-t6fH4KFvk" 
+                href="https://www.youtube.com/watch?v=o-hD_yH_j-s" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
@@ -543,18 +558,18 @@ if __name__ == "__main__":
 
         {/* Navigation */}
         <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
-          <a
-            href="/satellite-data"
+          <Link
+            to="/satellite-data"
             className="btn-secondary"
           >
             ← Previous: Satellite Data
-          </a>
-          <a
-            href="/qgis"
+          </Link>
+          <Link
+            to="/qgis"
             className="btn-primary"
           >
             Next: QGIS →
-          </a>
+          </Link>
         </div>
       </div>
     </div>

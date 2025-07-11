@@ -1,4 +1,5 @@
 import CodeBlock from '../components/CodeBlock';
+import { Link } from 'react-router-dom';
 
 const SatelliteData = () => {
   return (
@@ -33,7 +34,7 @@ const SatelliteData = () => {
             <div className="space-y-6">
               <div className="relative rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=600&h=400&fit=crop" 
+                  src="https://images.unsplash.com/photo-1708738793054-32b71e3fc822?q=80&w=2880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Earth Observation Satellites"
                   className="w-full h-64 object-cover"
                 />
@@ -55,7 +56,8 @@ const SatelliteData = () => {
                 </h4>
                 <p className="text-blue-700 text-sm mb-3">Understanding satellite technology and data collection</p>
                 <a 
-                  href="https://www.youtube.com/watch?v=YfNqAaJmTS4" 
+                  href="https://www.youtube.com/watch?v=VM5nOaLU7XM&t=1s" 
+                  
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
@@ -496,18 +498,18 @@ plt.show()`}
 
         {/* Navigation */}
         <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
-          <a
-            href="/rasterization"
+          <Link
+            to="/rasterization"
             className="btn-secondary"
           >
             ← Previous: Rasterization
-          </a>
-          <a
-            href="/machine-learning"
+          </Link>
+          <Link
+            to="/machine-learning"
             className="btn-primary"
           >
             Next: Machine Learning →
-          </a>
+          </Link>
         </div>
       </div>
     </div>

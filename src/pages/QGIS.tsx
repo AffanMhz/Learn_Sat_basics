@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const QGIS = () => {
   return (
     <div className="min-h-screen py-12">
@@ -37,20 +39,35 @@ const QGIS = () => {
                   <li>• Active community support</li>
                   <li>• Regular updates and improvements</li>
                 </ul>
+                {/* 📄 Read PDF link */}
+                <div className="mt-4">
+                  <a
+                    href="https://data.inpe.br/bdc/web/wp-content/uploads/2025/05/WTSS-QGIS-uma-extensao-para-recuperacao-e-visualizacao-de-series-temporais-de-imagens-de-satelite-no-ambiente-QGIS.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-700 hover:text-green-900 underline text-sm font-medium"
+                  >
+                    📄 Read full WTSS-QGIS PDF →
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="rounded-lg overflow-hidden shadow-md">
+            
+            <div className="rounded-lg overflow-hidden shadow-md flex flex-col">
+            <div className="relative pb-[100%]"> {/* 1:1 aspect ratio container */}
               <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="QGIS Geographic Information System Interface" 
-                className="w-full h-64 object-cover"
+                src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-021-25882-z/MediaObjects/41467_2021_25882_Fig2_HTML.png" 
+                alt="Visual Satellite Data" 
+                className="absolute inset-0 w-full h-full object-contain bg-white"
               />
               <div className="bg-gray-50 p-3 text-center">
-                <p className="text-sm font-medium text-gray-700">QGIS Interface</p>
+                <p className="text-sm font-medium text-gray-700">Visual Satellite Data</p>
               </div>
             </div>
           </div>
         </div>
+        </div>
+
 
         {/* Getting Started */}
         <div className="section-card">
@@ -510,7 +527,7 @@ const QGIS = () => {
                 Complete guide to getting started with QGIS for beginners
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=xGgfQ_Mg-vM" 
+                href="https://www.youtube.com/watch?v=NnPAJG39HFg" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
@@ -528,7 +545,7 @@ const QGIS = () => {
                 Working with satellite imagery and remote sensing data in QGIS
               </p>
               <a 
-                href="https://www.youtube.com/watch?v=D_jmYzKF7wU" 
+                href="https://www.youtube.com/watch?v=kxXww-iefFs" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
@@ -542,18 +559,18 @@ const QGIS = () => {
 
         {/* Navigation */}
         <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-200">
-          <a
-            href="/machine-learning"
+          <Link
+            to="/machine-learning"
             className="btn-secondary"
           >
             ← Previous: Machine Learning
-          </a>
-          <a
-            href="/isro-hackathon"
+          </Link>
+          <Link
+            to="/isro-hackathon"
             className="btn-primary"
           >
             Next: ISRO Hackathon →
-          </a>
+          </Link>
         </div>
       </div>
     </div>
