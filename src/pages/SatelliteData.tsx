@@ -77,38 +77,72 @@ const SatelliteData = () => {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Types of Satellite Data</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
-            <div className="tutorial-card">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">🌈 Optical Data</h3>
-              <p className="text-gray-700 mb-3">
-                Captures reflected sunlight across visible and near-infrared spectrum.
+            <div className="tutorial-card group hover:shadow-xl hover:scale-105 transition-all duration-300 border-l-4 border-blue-500">
+              <div className="flex items-start justify-between mb-3">
+                <h3 className="text-xl font-semibold text-gray-900">🌈 Optical Data</h3>
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center">
+                  <span className="text-2xl">📷</span>
+                </div>
+              </div>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Captures reflected sunlight across visible and near-infrared spectrum for natural color imaging.
               </p>
-              <ul className="text-gray-600 text-sm space-y-1">
-                <li>• RGB bands (Red, Green, Blue)</li>
-                <li>• Near-Infrared (NIR)</li>
-                <li>• Short-wave Infrared (SWIR)</li>
-                <li>• Panchromatic (high resolution)</li>
-              </ul>
-              <div className="mt-3 p-3 bg-blue-50 rounded-lg">
-                <p className="text-xs text-blue-700">
-                  <strong>Examples:</strong> Landsat, Sentinel-2, MODIS, WorldView
+              <div className="space-y-2 mb-4">
+                <div className="flex items-center text-sm text-gray-600">
+                  <div className="w-3 h-3 bg-red-400 rounded-full mr-2"></div>
+                  <span>RGB bands (Red, Green, Blue)</span>
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <div className="w-3 h-3 bg-green-400 rounded-full mr-2"></div>
+                  <span>Near-Infrared (NIR)</span>
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <div className="w-3 h-3 bg-purple-400 rounded-full mr-2"></div>
+                  <span>Short-wave Infrared (SWIR)</span>
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <div className="w-3 h-3 bg-gray-400 rounded-full mr-2"></div>
+                  <span>Panchromatic (high resolution)</span>
+                </div>
+              </div>
+              <div className="mt-auto p-3 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg border border-blue-200">
+                <p className="text-xs text-blue-800 font-medium">
+                  <strong>🛰️ Examples:</strong> Landsat, Sentinel-2, MODIS, WorldView
                 </p>
               </div>
             </div>
 
-            <div className="tutorial-card">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">📡 Radar Data (SAR)</h3>
-              <p className="text-gray-700 mb-3">
+            <div className="tutorial-card group hover:shadow-xl hover:scale-105 transition-all duration-300 border-l-4 border-green-500">
+              <div className="flex items-start justify-between mb-3">
+                <h3 className="text-xl font-semibold text-gray-900">📡 Radar Data (SAR)</h3>
+                <div className="w-12 h-12 bg-gradient-to-br from-green-100 to-green-200 rounded-lg flex items-center justify-center">
+                  <span className="text-2xl">📶</span>
+                </div>
+              </div>
+              <p className="text-gray-700 mb-4 leading-relaxed">
                 Active microwave sensors that can penetrate clouds and work day/night.
               </p>
-              <ul className="text-gray-600 text-sm space-y-1">
-                <li>• C-band, X-band, L-band</li>
-                <li>• VV, VH, HH, HV polarizations</li>
-                <li>• Interferometric capabilities</li>
-                <li>• All-weather imaging</li>
-              </ul>
-              <div className="mt-3 p-3 bg-green-50 rounded-lg">
-                <p className="text-xs text-green-700">
-                  <strong>Examples:</strong> Sentinel-1, RADARSAT, ALOS PALSAR
+              <div className="space-y-2 mb-4">
+                <div className="flex items-center text-sm text-gray-600">
+                  <div className="w-3 h-3 bg-blue-400 rounded-full mr-2"></div>
+                  <span>C-band, X-band, L-band</span>
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <div className="w-3 h-3 bg-green-400 rounded-full mr-2"></div>
+                  <span>VV, VH, HH, HV polarizations</span>
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <div className="w-3 h-3 bg-purple-400 rounded-full mr-2"></div>
+                  <span>Interferometric capabilities</span>
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <div className="w-3 h-3 bg-yellow-400 rounded-full mr-2"></div>
+                  <span>All-weather imaging</span>
+                </div>
+              </div>
+              <div className="mt-auto p-3 bg-gradient-to-r from-green-50 to-green-100 rounded-lg border border-green-200">
+                <p className="text-xs text-green-800 font-medium">
+                  <strong>🛰️ Examples:</strong> Sentinel-1, RADARSAT, ALOS PALSAR
                 </p>
               </div>
             </div>
@@ -230,6 +264,98 @@ const SatelliteData = () => {
         {/* Major Satellite Missions */}
         <div className="section-card">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Major Satellite Missions</h2>
+          
+          {/* Quick Comparison Table */}
+          <div className="mb-8 overflow-hidden rounded-lg border border-gray-200">
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 px-6 py-4 border-b border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-900">🔍 Quick Comparison</h3>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="min-w-full divide-y divide-gray-200">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Mission</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Resolution</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Revisit</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Type</th>
+                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Access</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white divide-y divide-gray-200">
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🇺🇸</span>
+                        <div>
+                          <div className="text-sm font-medium text-gray-900">Landsat 8/9</div>
+                          <div className="text-sm text-gray-500">NASA/USGS</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">30m / 15m</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">16 days</td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                        Optical + Thermal
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        Free
+                      </span>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🇪🇺</span>
+                        <div>
+                          <div className="text-sm font-medium text-gray-900">Sentinel-2</div>
+                          <div className="text-sm text-gray-500">ESA Copernicus</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">10-60m</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">5 days</td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                        Multispectral
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                        Free
+                      </span>
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">🇮🇳</span>
+                        <div>
+                          <div className="text-sm font-medium text-gray-900">Resourcesat-2A</div>
+                          <div className="text-sm text-gray-500">ISRO</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">5.8-56m</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">24 days</td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                        Multispectral
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                        Registered
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
           <div className="space-y-6">
             
             <div className="problem-card">
@@ -302,15 +428,48 @@ const SatelliteData = () => {
         {/* Data Processing Steps */}
         <div className="section-card">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Data Processing Pipeline</h2>
+          <div className="mb-6 text-center">
+            <p className="text-gray-600">Follow this systematic approach for satellite data analysis</p>
+          </div>
+          
+          {/* Progress Bar */}
+          <div className="flex items-center justify-between mb-8 px-4">
+            <div className="flex items-center">
+              <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">1</div>
+              <div className="w-16 h-1 bg-blue-500 mx-2"></div>
+            </div>
+            <div className="flex items-center">
+              <div className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">2</div>
+              <div className="w-16 h-1 bg-green-500 mx-2"></div>
+            </div>
+            <div className="flex items-center">
+              <div className="w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">3</div>
+              <div className="w-16 h-1 bg-yellow-500 mx-2"></div>
+            </div>
+            <div className="flex items-center">
+              <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">4</div>
+              <div className="w-16 h-1 bg-purple-500 mx-2"></div>
+            </div>
+            <div className="w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">5</div>
+          </div>
+          
           <div className="space-y-4">
             
-            <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg">
-              <div className="flex-shrink-0 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-semibold">
+            <div className="flex items-start space-x-4 p-6 bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl border-l-4 border-blue-500 hover:shadow-lg transition-all duration-300">
+              <div className="flex-shrink-0 w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
                 1
               </div>
-              <div>
-                <h3 className="font-semibold text-gray-900">Raw Data Acquisition</h3>
-                <p className="text-gray-700 text-sm">Download satellite imagery from data portals or APIs</p>
+              <div className="flex-grow">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-bold text-gray-900 text-lg">Raw Data Acquisition</h3>
+                  <span className="text-xs bg-blue-200 text-blue-800 px-2 py-1 rounded-full font-medium">Start Here</span>
+                </div>
+                <p className="text-gray-700 mb-3">Download satellite imagery from data portals or APIs</p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Earth Explorer</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Copernicus Hub</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">USGS</span>
+                </div>
               </div>
             </div>
 
@@ -351,6 +510,180 @@ const SatelliteData = () => {
               <div>
                 <h3 className="font-semibold text-gray-900">Validation & Output</h3>
                 <p className="text-gray-700 text-sm">Accuracy assessment, result visualization, report generation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Practical Exercise Section */}
+        <div className="section-card bg-gradient-to-br from-indigo-50 to-purple-50 border border-indigo-200">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">🎯 Try It Yourself</h2>
+            <p className="text-lg text-gray-700">Practice with real satellite data using these interactive exercises</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                  <span className="text-2xl">🌱</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-900">NDVI Analysis</h3>
+                  <p className="text-sm text-gray-600">Beginner Level</p>
+                </div>
+              </div>
+              <p className="text-gray-700 mb-4">
+                Calculate vegetation health using Landsat data. Learn to identify healthy crops vs stressed vegetation.
+              </p>
+              <div className="space-y-2 mb-4">
+                <div className="flex items-center text-sm text-gray-600">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                  Download Landsat 8 data
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                  Calculate NDVI index
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+                  Create visualization
+                </div>
+              </div>
+              <a 
+                href="https://earthexplorer.usgs.gov/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors text-sm font-medium"
+              >
+                <span className="mr-2">🚀</span>
+                Start Exercise
+              </a>
+            </div>
+
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                  <span className="text-2xl">🌊</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg text-gray-900">Water Body Detection</h3>
+                  <p className="text-sm text-gray-600">Intermediate Level</p>
+                </div>
+              </div>
+              <p className="text-gray-700 mb-4">
+                Use Sentinel-2 data to map water bodies and monitor changes over time using spectral indices.
+              </p>
+              <div className="space-y-2 mb-4">
+                <div className="flex items-center text-sm text-gray-600">
+                  <span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                  Access Sentinel-2 data
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                  Apply NDWI algorithm
+                </div>
+                <div className="flex items-center text-sm text-gray-600">
+                  <span className="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                  Time series analysis
+                </div>
+              </div>
+              <a 
+                href="https://scihub.copernicus.eu/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+              >
+                <span className="mr-2">🚀</span>
+                Start Exercise
+              </a>
+            </div>
+          </div>
+          
+          <div className="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
+            <div className="flex items-start">
+              <span className="text-yellow-600 mr-3 text-xl">💡</span>
+              <div>
+                <h4 className="font-semibold text-yellow-800 mb-1">Pro Tip</h4>
+                <p className="text-yellow-700 text-sm">
+                  Start with cloud-free images and small study areas. Always check data quality and processing levels before analysis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Resources and Tools */}
+        <div className="section-card">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">🛠️ Essential Tools & Resources</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 border border-blue-200">
+              <div className="text-center mb-4">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span className="text-3xl text-white">🐍</span>
+                </div>
+                <h3 className="font-semibold text-lg text-gray-900">Python Libraries</h3>
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-center justify-between p-2 bg-white rounded border">
+                  <span className="text-sm font-medium">rasterio</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Raster I/O</span>
+                </div>
+                <div className="flex items-center justify-between p-2 bg-white rounded border">
+                  <span className="text-sm font-medium">GDAL</span>
+                  <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Processing</span>
+                </div>
+                <div className="flex items-center justify-between p-2 bg-white rounded border">
+                  <span className="text-sm font-medium">xarray</span>
+                  <span className="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Analysis</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-6 border border-green-200">
+              <div className="text-center mb-4">
+                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span className="text-3xl text-white">☁️</span>
+                </div>
+                <h3 className="font-semibold text-lg text-gray-900">Cloud Platforms</h3>
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-center justify-between p-2 bg-white rounded border">
+                  <span className="text-sm font-medium">Google Earth Engine</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Free</span>
+                </div>
+                <div className="flex items-center justify-between p-2 bg-white rounded border">
+                  <span className="text-sm font-medium">AWS</span>
+                  <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">Paid</span>
+                </div>
+                <div className="flex items-center justify-between p-2 bg-white rounded border">
+                  <span className="text-sm font-medium">Planetary Computer</span>
+                  <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Free</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-6 border border-purple-200">
+              <div className="text-center mb-4">
+                <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span className="text-3xl text-white">🖥️</span>
+                </div>
+                <h3 className="font-semibold text-lg text-gray-900">Desktop Software</h3>
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-center justify-between p-2 bg-white rounded border">
+                  <span className="text-sm font-medium">QGIS</span>
+                  <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Free</span>
+                </div>
+                <div className="flex items-center justify-between p-2 bg-white rounded border">
+                  <span className="text-sm font-medium">ENVI</span>
+                  <span className="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Commercial</span>
+                </div>
+                <div className="flex items-center justify-between p-2 bg-white rounded border">
+                  <span className="text-sm font-medium">SNAP</span>
+                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Free</span>
+                </div>
               </div>
             </div>
           </div>
@@ -493,6 +826,95 @@ plt.show()`}
                 <li>• Sea level rise</li>
               </ul>
             </div>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="section-card">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">❓ Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            
+            <details className="group border border-gray-200 rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-4 hover:bg-gray-50 rounded-lg">
+                <h3 className="font-semibold text-gray-900">What's the difference between Landsat and Sentinel-2?</h3>
+                <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-4 pb-4 text-gray-700">
+                <p className="mb-2">Key differences:</p>
+                <ul className="space-y-1 text-sm">
+                  <li>• <strong>Revisit Time:</strong> Landsat (16 days) vs Sentinel-2 (5 days)</li>
+                  <li>• <strong>Resolution:</strong> Landsat (30m) vs Sentinel-2 (10-60m)</li>
+                  <li>• <strong>Bands:</strong> Landsat has thermal bands, Sentinel-2 has more visible/NIR bands</li>
+                  <li>• <strong>Coverage:</strong> Both global, but different orbital patterns</li>
+                </ul>
+              </div>
+            </details>
+
+            <details className="group border border-gray-200 rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-4 hover:bg-gray-50 rounded-lg">
+                <h3 className="font-semibold text-gray-900">How do I choose the right satellite data for my project?</h3>
+                <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-4 pb-4 text-gray-700 text-sm">
+                <p className="mb-2">Consider these factors:</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <p className="font-medium text-gray-900 mb-1">Spatial Requirements:</p>
+                    <ul className="space-y-1">
+                      <li>• Study area size</li>
+                      <li>• Required detail level</li>
+                      <li>• Feature identification needs</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="font-medium text-gray-900 mb-1">Temporal Requirements:</p>
+                    <ul className="space-y-1">
+                      <li>• Change detection frequency</li>
+                      <li>• Seasonal analysis needs</li>
+                      <li>• Historical data availability</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <details className="group border border-gray-200 rounded-lg">
+              <summary className="flex justify-between items-center cursor-pointer p-4 hover:bg-gray-50 rounded-lg">
+                <h3 className="font-semibold text-gray-900">What preprocessing steps are essential?</h3>
+                <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-4 pb-4 text-gray-700 text-sm">
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <span className="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xs font-bold mr-3 mt-0.5">1</span>
+                    <div>
+                      <p className="font-medium">Cloud masking</p>
+                      <p className="text-gray-600">Remove clouds and shadows from analysis</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xs font-bold mr-3 mt-0.5">2</span>
+                    <div>
+                      <p className="font-medium">Atmospheric correction</p>
+                      <p className="text-gray-600">Convert to surface reflectance values</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="w-6 h-6 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-xs font-bold mr-3 mt-0.5">3</span>
+                    <div>
+                      <p className="font-medium">Geometric correction</p>
+                      <p className="text-gray-600">Ensure accurate geolocation and projection</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </details>
           </div>
         </div>
 
