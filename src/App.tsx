@@ -1,5 +1,6 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Rasterization from './pages/Rasterization';
 import SatelliteData from './pages/SatelliteData';
@@ -16,6 +17,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-50">
+        <ScrollToTop />
         <Navbar />
         <main className="pb-16">
           <Routes>

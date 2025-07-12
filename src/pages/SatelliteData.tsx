@@ -432,25 +432,29 @@ const SatelliteData = () => {
             <p className="text-gray-600">Follow this systematic approach for satellite data analysis</p>
           </div>
           
-          {/* Progress Bar */}
-          <div className="flex items-center justify-between mb-8 px-4">
-            <div className="flex items-center">
-              <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">1</div>
-              <div className="w-16 h-1 bg-blue-500 mx-2"></div>
+          {/* Progress Bar - Responsive */}
+          <div className="mb-8 px-2">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-4 sm:space-y-0">
+              <div className="flex items-center justify-center sm:justify-start">
+                <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">1</div>
+                <div className="hidden sm:block w-8 md:w-16 h-1 bg-blue-500 mx-2"></div>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">2</div>
+                <div className="hidden sm:block w-8 md:w-16 h-1 bg-green-500 mx-2"></div>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">3</div>
+                <div className="hidden sm:block w-8 md:w-16 h-1 bg-yellow-500 mx-2"></div>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">4</div>
+                <div className="hidden sm:block w-8 md:w-16 h-1 bg-purple-500 mx-2"></div>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">5</div>
+              </div>
             </div>
-            <div className="flex items-center">
-              <div className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">2</div>
-              <div className="w-16 h-1 bg-green-500 mx-2"></div>
-            </div>
-            <div className="flex items-center">
-              <div className="w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">3</div>
-              <div className="w-16 h-1 bg-yellow-500 mx-2"></div>
-            </div>
-            <div className="flex items-center">
-              <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">4</div>
-              <div className="w-16 h-1 bg-purple-500 mx-2"></div>
-            </div>
-            <div className="w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">5</div>
           </div>
           
           <div className="space-y-4">
@@ -473,43 +477,75 @@ const SatelliteData = () => {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-green-50 to-green-100 rounded-lg">
-              <div className="flex-shrink-0 w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-semibold">
+            <div className="flex items-start space-x-4 p-6 bg-gradient-to-r from-green-50 to-green-100 rounded-xl border-l-4 border-green-500 hover:shadow-lg transition-all duration-300">
+              <div className="flex-shrink-0 w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
                 2
               </div>
-              <div>
-                <h3 className="font-semibold text-gray-900">Preprocessing</h3>
-                <p className="text-gray-700 text-sm">Atmospheric correction, geometric correction, radiometric calibration</p>
+              <div className="flex-grow">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-bold text-gray-900 text-lg">Preprocessing</h3>
+                  <span className="text-xs bg-green-200 text-green-800 px-2 py-1 rounded-full font-medium">Critical</span>
+                </div>
+                <p className="text-gray-700 mb-3">Atmospheric correction, geometric correction, radiometric calibration</p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Cloud Masking</span>
+                  <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Atmospheric Correction</span>
+                  <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Geolocation</span>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-yellow-50 to-yellow-100 rounded-lg">
-              <div className="flex-shrink-0 w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center font-semibold">
+            <div className="flex items-start space-x-4 p-6 bg-gradient-to-r from-yellow-50 to-yellow-100 rounded-xl border-l-4 border-yellow-500 hover:shadow-lg transition-all duration-300">
+              <div className="flex-shrink-0 w-12 h-12 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
                 3
               </div>
-              <div>
-                <h3 className="font-semibold text-gray-900">Image Enhancement</h3>
-                <p className="text-gray-700 text-sm">Contrast adjustment, noise reduction, band combinations</p>
+              <div className="flex-grow">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-bold text-gray-900 text-lg">Image Enhancement</h3>
+                  <span className="text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded-full font-medium">Optional</span>
+                </div>
+                <p className="text-gray-700 mb-3">Contrast adjustment, noise reduction, band combinations</p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">Histogram Stretch</span>
+                  <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">Band Math</span>
+                  <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">Filtering</span>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-purple-50 to-purple-100 rounded-lg">
-              <div className="flex-shrink-0 w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center font-semibold">
+            <div className="flex items-start space-x-4 p-6 bg-gradient-to-r from-purple-50 to-purple-100 rounded-xl border-l-4 border-purple-500 hover:shadow-lg transition-all duration-300">
+              <div className="flex-shrink-0 w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
                 4
               </div>
-              <div>
-                <h3 className="font-semibold text-gray-900">Analysis & Classification</h3>
-                <p className="text-gray-700 text-sm">Feature extraction, machine learning classification, change detection</p>
+              <div className="flex-grow">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-bold text-gray-900 text-lg">Analysis & Classification</h3>
+                  <span className="text-xs bg-purple-200 text-purple-800 px-2 py-1 rounded-full font-medium">Core</span>
+                </div>
+                <p className="text-gray-700 mb-3">Feature extraction, machine learning classification, change detection</p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Supervised ML</span>
+                  <span className="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Unsupervised ML</span>
+                  <span className="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Change Detection</span>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 p-4 bg-gradient-to-r from-red-50 to-red-100 rounded-lg">
-              <div className="flex-shrink-0 w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center font-semibold">
+            <div className="flex items-start space-x-4 p-6 bg-gradient-to-r from-red-50 to-red-100 rounded-xl border-l-4 border-red-500 hover:shadow-lg transition-all duration-300">
+              <div className="flex-shrink-0 w-12 h-12 bg-red-500 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
                 5
               </div>
-              <div>
-                <h3 className="font-semibold text-gray-900">Validation & Output</h3>
-                <p className="text-gray-700 text-sm">Accuracy assessment, result visualization, report generation</p>
+              <div className="flex-grow">
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="font-bold text-gray-900 text-lg">Validation & Output</h3>
+                  <span className="text-xs bg-red-200 text-red-800 px-2 py-1 rounded-full font-medium">Final</span>
+                </div>
+                <p className="text-gray-700 mb-3">Accuracy assessment, result visualization, report generation</p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Accuracy Assessment</span>
+                  <span className="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Visualization</span>
+                  <span className="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Reporting</span>
+                </div>
               </div>
             </div>
           </div>
