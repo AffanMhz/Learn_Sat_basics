@@ -755,7 +755,7 @@ const SatelliteData = () => {
                 </div>
               </div>
               <a 
-                href="https://scihub.copernicus.eu/" 
+                href="https://medium.com/%40melqkiades/water-detection-using-ndwi-on-google-earth-engine-2919a9bf1951" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
