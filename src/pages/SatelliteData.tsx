@@ -1,4 +1,4 @@
-import CodeBlock from '../components/CodeBlock';
+import CodeBlock from '../components/CodeBlockEnhanced';
 import { Link } from 'react-router-dom';
 
 const SatelliteData = () => {
@@ -434,25 +434,25 @@ const SatelliteData = () => {
           
           {/* Progress Bar - Responsive */}
           <div className="mb-8 px-2">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-4 sm:space-y-0">
-              <div className="flex items-center justify-center sm:justify-start">
-                <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">1</div>
-                <div className="hidden sm:block w-8 md:w-16 h-1 bg-blue-500 mx-2"></div>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center space-y-4 sm:space-y-0 sm:space-x-8">
+              <div className="flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-full flex items-center justify-center text-lg font-bold shadow-lg hover:shadow-xl transition-all">1</div>
+                <div className="hidden sm:block w-12 h-1 bg-gradient-to-r from-blue-500 to-green-500 ml-4"></div>
               </div>
               <div className="flex items-center justify-center">
-                <div className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">2</div>
-                <div className="hidden sm:block w-8 md:w-16 h-1 bg-green-500 mx-2"></div>
+                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-full flex items-center justify-center text-lg font-bold shadow-lg hover:shadow-xl transition-all">2</div>
+                <div className="hidden sm:block w-12 h-1 bg-gradient-to-r from-green-500 to-yellow-500 ml-4"></div>
               </div>
               <div className="flex items-center justify-center">
-                <div className="w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">3</div>
-                <div className="hidden sm:block w-8 md:w-16 h-1 bg-yellow-500 mx-2"></div>
+                <div className="w-12 h-12 bg-gradient-to-br from-yellow-500 to-yellow-600 text-white rounded-full flex items-center justify-center text-lg font-bold shadow-lg hover:shadow-xl transition-all">3</div>
+                <div className="hidden sm:block w-12 h-1 bg-gradient-to-r from-yellow-500 to-purple-500 ml-4"></div>
               </div>
               <div className="flex items-center justify-center">
-                <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">4</div>
-                <div className="hidden sm:block w-8 md:w-16 h-1 bg-purple-500 mx-2"></div>
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-full flex items-center justify-center text-lg font-bold shadow-lg hover:shadow-xl transition-all">4</div>
+                <div className="hidden sm:block w-12 h-1 bg-gradient-to-r from-purple-500 to-red-500 ml-4"></div>
               </div>
               <div className="flex items-center justify-center">
-                <div className="w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center text-sm font-semibold">5</div>
+                <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 text-white rounded-full flex items-center justify-center text-lg font-bold shadow-lg hover:shadow-xl transition-all">5</div>
               </div>
             </div>
           </div>
@@ -466,13 +466,41 @@ const SatelliteData = () => {
               <div className="flex-grow">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-bold text-gray-900 text-lg">Raw Data Acquisition</h3>
-                  <span className="text-xs bg-blue-200 text-blue-800 px-2 py-1 rounded-full font-medium">Start Here</span>
+                  <a 
+                    href="https://earthexplorer.usgs.gov/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-full font-medium transition-colors cursor-pointer"
+                  >
+                    Start Here
+                  </a>
                 </div>
                 <p className="text-gray-700 mb-3">Download satellite imagery from data portals or APIs</p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Earth Explorer</span>
-                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Copernicus Hub</span>
-                  <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">USGS</span>
+                  <a 
+                    href="https://earthexplorer.usgs.gov/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs bg-blue-100 hover:bg-blue-200 text-blue-700 px-2 py-1 rounded transition-colors cursor-pointer"
+                  >
+                    Earth Explorer
+                  </a>
+                  <a 
+                    href="https://scihub.copernicus.eu/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs bg-blue-100 hover:bg-blue-200 text-blue-700 px-2 py-1 rounded transition-colors cursor-pointer"
+                  >
+                    Copernicus Hub
+                  </a>
+                  <a 
+                    href="https://www.usgs.gov/centers/eros/science/usgs-eros-archive-landsat-archives" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs bg-blue-100 hover:bg-blue-200 text-blue-700 px-2 py-1 rounded transition-colors cursor-pointer"
+                  >
+                    USGS
+                  </a>
                 </div>
               </div>
             </div>
@@ -484,13 +512,41 @@ const SatelliteData = () => {
               <div className="flex-grow">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-bold text-gray-900 text-lg">Preprocessing</h3>
-                  <span className="text-xs bg-green-200 text-green-800 px-2 py-1 rounded-full font-medium">Critical</span>
+                  <a 
+                    href="https://docs.qgis.org/3.22/en/docs/user_manual/processing_algs/gdal/rasterconversion.html" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-full font-medium transition-colors cursor-pointer"
+                  >
+                    Critical
+                  </a>
                 </div>
                 <p className="text-gray-700 mb-3">Atmospheric correction, geometric correction, radiometric calibration</p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Cloud Masking</span>
-                  <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Atmospheric Correction</span>
-                  <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Geolocation</span>
+                  <a 
+                    href="https://www.usgs.gov/landsat-missions/landsat-cloud-cover-assessment" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs bg-green-100 hover:bg-green-200 text-green-700 px-2 py-1 rounded transition-colors cursor-pointer"
+                  >
+                    Cloud Masking
+                  </a>
+                  <a 
+                    href="https://www.usgs.gov/landsat-missions/landsat-surface-reflectance" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs bg-green-100 hover:bg-green-200 text-green-700 px-2 py-1 rounded transition-colors cursor-pointer"
+                  >
+                    Atmospheric Correction
+                  </a>
+                  <a 
+                    href="https://gisgeography.com/georeferencing/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs bg-green-100 hover:bg-green-200 text-green-700 px-2 py-1 rounded transition-colors cursor-pointer"
+                  >
+                    Geolocation
+                  </a>
                 </div>
               </div>
             </div>
@@ -502,13 +558,41 @@ const SatelliteData = () => {
               <div className="flex-grow">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-bold text-gray-900 text-lg">Image Enhancement</h3>
-                  <span className="text-xs bg-yellow-200 text-yellow-800 px-2 py-1 rounded-full font-medium">Optional</span>
+                  <a 
+                    href="https://gisgeography.com/histogram-stretching/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-1 rounded-full font-medium transition-colors cursor-pointer"
+                  >
+                    Optional
+                  </a>
                 </div>
                 <p className="text-gray-700 mb-3">Contrast adjustment, noise reduction, band combinations</p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">Histogram Stretch</span>
-                  <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">Band Math</span>
-                  <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">Filtering</span>
+                  <a 
+                    href="https://gisgeography.com/histogram-stretching/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs bg-yellow-100 hover:bg-yellow-200 text-yellow-700 px-2 py-1 rounded transition-colors cursor-pointer"
+                  >
+                    Histogram Stretch
+                  </a>
+                  <a 
+                    href="https://gisgeography.com/band-combinations-landsat-8/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs bg-yellow-100 hover:bg-yellow-200 text-yellow-700 px-2 py-1 rounded transition-colors cursor-pointer"
+                  >
+                    Band Math
+                  </a>
+                  <a 
+                    href="https://gisgeography.com/image-enhancement-techniques/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs bg-yellow-100 hover:bg-yellow-200 text-yellow-700 px-2 py-1 rounded transition-colors cursor-pointer"
+                  >
+                    Filtering
+                  </a>
                 </div>
               </div>
             </div>
@@ -520,13 +604,35 @@ const SatelliteData = () => {
               <div className="flex-grow">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-bold text-gray-900 text-lg">Analysis & Classification</h3>
-                  <span className="text-xs bg-purple-200 text-purple-800 px-2 py-1 rounded-full font-medium">Core</span>
+                  <Link 
+                    to="/machine-learning"
+                    className="text-xs bg-purple-500 hover:bg-purple-600 text-white px-3 py-1 rounded-full font-medium transition-colors cursor-pointer"
+                  >
+                    Core
+                  </Link>
                 </div>
                 <p className="text-gray-700 mb-3">Feature extraction, machine learning classification, change detection</p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Supervised ML</span>
-                  <span className="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Unsupervised ML</span>
-                  <span className="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Change Detection</span>
+                  <Link 
+                    to="/machine-learning"
+                    className="text-xs bg-purple-100 hover:bg-purple-200 text-purple-700 px-2 py-1 rounded transition-colors cursor-pointer"
+                  >
+                    Supervised ML
+                  </Link>
+                  <Link 
+                    to="/machine-learning"
+                    className="text-xs bg-purple-100 hover:bg-purple-200 text-purple-700 px-2 py-1 rounded transition-colors cursor-pointer"
+                  >
+                    Unsupervised ML
+                  </Link>
+                  <a 
+                    href="https://gisgeography.com/change-detection-remote-sensing/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs bg-purple-100 hover:bg-purple-200 text-purple-700 px-2 py-1 rounded transition-colors cursor-pointer"
+                  >
+                    Change Detection
+                  </a>
                 </div>
               </div>
             </div>
@@ -538,13 +644,37 @@ const SatelliteData = () => {
               <div className="flex-grow">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="font-bold text-gray-900 text-lg">Validation & Output</h3>
-                  <span className="text-xs bg-red-200 text-red-800 px-2 py-1 rounded-full font-medium">Final</span>
+                  <Link 
+                    to="/qgis"
+                    className="text-xs bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded-full font-medium transition-colors cursor-pointer"
+                  >
+                    Final
+                  </Link>
                 </div>
                 <p className="text-gray-700 mb-3">Accuracy assessment, result visualization, report generation</p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Accuracy Assessment</span>
-                  <span className="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Visualization</span>
-                  <span className="text-xs bg-red-100 text-red-700 px-2 py-1 rounded">Reporting</span>
+                  <a 
+                    href="https://gisgeography.com/accuracy-assessment/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs bg-red-100 hover:bg-red-200 text-red-700 px-2 py-1 rounded transition-colors cursor-pointer"
+                  >
+                    Accuracy Assessment
+                  </a>
+                  <Link 
+                    to="/qgis"
+                    className="text-xs bg-red-100 hover:bg-red-200 text-red-700 px-2 py-1 rounded transition-colors cursor-pointer"
+                  >
+                    Visualization
+                  </Link>
+                  <a 
+                    href="https://gisgeography.com/gis-reporting/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-xs bg-red-100 hover:bg-red-200 text-red-700 px-2 py-1 rounded transition-colors cursor-pointer"
+                  >
+                    Reporting
+                  </a>
                 </div>
               </div>
             </div>
@@ -730,6 +860,7 @@ const SatelliteData = () => {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Python Example: Loading Satellite Data</h2>
           <CodeBlock 
             title="Satellite Data Processing with Python"
+            language="python"
             code={`import rasterio
 import numpy as np
 import matplotlib.pyplot as plt
